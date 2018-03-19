@@ -5,9 +5,9 @@ namespace ogl {
 }
 
 
-#include <assert.h>
-#include <stdint.h>
-#include <stddef.h>
+//#include <assert.h>
+//#include <stdint.h>
+//#include <stddef.h>
 
 #include "info.hpp"
 #include "vertex_format.hpp"
