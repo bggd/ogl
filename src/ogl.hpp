@@ -18,7 +18,7 @@ namespace ogl {
 #include "gl_state.hpp"
 #include "vao.hpp"
 
-#define GAME_OGL_IMPLEMENTATION
+#define GAME_OGL_IMPL
 #include "info.cpp"
 #include "vertex_layout.cpp"
 #include "shader_glsl.cpp"
