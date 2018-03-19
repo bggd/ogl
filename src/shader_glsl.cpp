@@ -72,7 +72,7 @@ ogl::ShaderGLSL ogl::shader_glsl_create(ogl::Uniform* uniform_ary, size_t unifor
   glLinkProgram(glsl.id);
 
   status = GL_TRUE;
-  glGetShaderiv(glsl.id, GL_LINK_STATUS, &status);
+  glGetProgramiv(glsl.id, GL_LINK_STATUS, &status);
 
   if (status == GL_FALSE) {
     glDeleteShader(vert);
