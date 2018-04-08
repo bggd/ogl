@@ -9,7 +9,8 @@ struct VertexLayout {
   uint8_t vbo_slot_idx = 0;
   const char* name = nullptr;
 
-  bool operator==(const VertexLayout& other);
+  bool operator==(const VertexLayout& other) const;
+  bool operator!=(const VertexLayout& other) const;
 
 };
 

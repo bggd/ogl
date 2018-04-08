@@ -15,7 +15,8 @@ namespace ogl {
     VBO& operator=(VBO&& other);
     ~VBO();
 
-    bool operator==(const VBO& other);
+    bool operator==(const VBO& other) const;
+    bool operator!=(const VBO& other) const;
 
   };
 

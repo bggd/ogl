@@ -35,13 +35,18 @@ ogl::VBO::~VBO()
   if (this->is_valid) { assert(this->is_released); }
 }
 
-bool ogl::VBO::operator==(const ogl::VBO& other)
+bool ogl::VBO::operator==(const ogl::VBO& other) const
 {
   return (this->id == other.id &&
           this->size == other.size &&
           this->usage == other.usage &&
           this->is_valid == other.is_valid &&
           this->is_released == other.is_released);
+}
+
+bool ogl::VBO::operator!=(const ogl::VBO& other) const
+{
+  return !(*this == other);
 }
 
 ogl::VBO ogl::vbo_create(uint16_t size, const void* data)
